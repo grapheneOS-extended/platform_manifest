@@ -26,6 +26,17 @@
   <project path="external/json-c" name="android_external_json-c" remote="github/LineageOS" />
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="graphene-extended" />
 
+  <!-- HALs -->
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="github/LineageOS" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845 and sm8150, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+  </project>
+
   <!-- Hardware -->
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="graphene-extended" />
 
