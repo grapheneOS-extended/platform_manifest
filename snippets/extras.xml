@@ -26,6 +26,8 @@
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" revision="lineage-18.1-caf" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" revision="lineage-18.1-caf" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" revision="lineage-18.1-caf" remote="github/LineageOS" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="vendor" remote="graphene-extended" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="graphene-extended" />
 
   <!-- External -->
   <project path="external/json-c" name="android_external_json-c" remote="github/LineageOS" />
