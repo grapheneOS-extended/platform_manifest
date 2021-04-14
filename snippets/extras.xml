@@ -18,5 +18,6 @@
 
   <!-- External -->
   <project path="external/json-c" name="android_external_json-c" remote="github/LineageOS" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="graphene-extended" />
 
 </manifest>
